@@ -4,12 +4,6 @@ import Instructor from "./components/Instructor";
 import { pb } from "./main";
 import { useQuery } from "react-query";
 function Instructors() {
-  // {
-  //   id: string;
-  //   name: string;
-  //   imageLink: string;
-  // }[]
-
   const { isLoading, data } = useQuery("Instructors", async () => {
     const result = await pb.collection("Instructor").getFullList();
     const newresult = result.map((instructor) => {
