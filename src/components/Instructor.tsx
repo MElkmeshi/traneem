@@ -11,7 +11,7 @@ function Instructor({
   name: string;
 }) {
   return (
-    <Link to={`/Instructors/${id}`}>
+    <Link to={`/traneem/instructors/${id}`}>
       <Card>
         <img src={imageLink} className="card-img-top" alt={name} />
         <Card.Body>

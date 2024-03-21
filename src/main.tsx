@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <header>
           <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
-              <LinkContainer to="/">
+              <LinkContainer to="/traneem">
                 <Navbar.Brand>Talabaty</Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
