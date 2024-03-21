@@ -40,12 +40,12 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           </Navbar>
         </header>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<App />} />
-          <Route path="/topics" element={<Topics />} />
-          <Route path="/instructors" element={<Instructors />} />
-          <Route path="/instructors/:id" element={<InstructorPage />} />
-          <Route path="/videos" element={<Videos />} />
+          <Route path="/traneem/" element={<Home />} />
+          <Route path="/traneem/about" element={<App />} />
+          <Route path="/traneem/topics" element={<Topics />} />
+          <Route path="/traneem/instructors" element={<Instructors />} />
+          <Route path="/traneem/instructors/:id" element={<InstructorPage />} />
+          <Route path="/traneem/videos" element={<Videos />} />
         </Routes>
         <footer className="mt-auto py-3 border-top">
           <Container>
