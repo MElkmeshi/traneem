@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import VideoCard from "./components/VideoCard";
 import { pb } from "./main";
 import { useQuery } from "react-query";
+import LoadingBox from "./components/LoadingBox";
 function Videos() {
   const { isLoading, data } = useQuery("Videos", () =>
     pb
@@ -15,7 +16,7 @@ function Videos() {
       })
   );
 
-  if (isLoading) return "Loading...";
+  if (isLoading) return <LoadingBox />;
 
   return (
     <>

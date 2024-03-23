@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Instructor from "./components/Instructor";
 import { pb } from "./main";
 import { useQuery } from "react-query";
+import LoadingBox from "./components/LoadingBox";
 function Instructors() {
   const { isLoading, data } = useQuery("Instructors", async () => {
     const result = await pb.collection("Instructor").getFullList();
@@ -17,7 +18,7 @@ function Instructors() {
     return newresult;
   });
 
-  if (isLoading) return "Loading...";
+  if (isLoading) return <LoadingBox />;
 
   return (
     <>
